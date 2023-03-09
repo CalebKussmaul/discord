@@ -80,6 +80,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         // Do any additional setup after loading the view.
         NotificationCenter.default.addObserver( self, selector: #selector(adjustForKeyboard), name: Notification.Name.UIKeyboardWillHide, object: nil)
         NotificationCenter.default.addObserver( self, selector: #selector(adjustForKeyboard), name: Notification.Name.UIKeyboardWillChangeFrame, object: nil)
+        self.overrideUserInterfaceStyle = .light
     }
     
     @objc func adjustForKeyboard( notification:Notification ) {

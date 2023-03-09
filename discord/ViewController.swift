@@ -81,6 +81,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.overrideUserInterfaceStyle = .light
         // Do any additional setup after loading the view, typically from a nib.
         if let decoded = UserDefaults.standard.object(forKey: "proxies") {
             let decoderresult = decoded as! Data

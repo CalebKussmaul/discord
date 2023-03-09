@@ -19,6 +19,7 @@ class AboutViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.overrideUserInterfaceStyle = .light
         // Do any additional setup after loading the view.
     }
 

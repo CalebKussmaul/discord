@@ -1,3 +1,11 @@
+# Compiling on Xcode 14
+
+Carthege is required, but has problems on M1. Use the included carthege.sh script to build
+
+1. run `./carthage.sh update --no-use-binaries --platform ios`
+2. in Signing & Capabilities select your personal account and change the bundle identifier to something unique
+3. install to your physical device. Compilation will fail for simulators
+
 # discord
 
 This is an project aimed to provide bare HTTP proxy under 4G/LTE with multiple proxy auto-config File or manual configuration, allowing you to manage your network with multiple PAC files. Since I'm just an amateur to Swift development and the project itself is more like a proof of concept prototype, instead of some serious long-term maintainable engineering product, I won't provide any kind of warranty, or any kind of "will fix ASAP" promise. For the same reason, I will also not write any kind of Test/Unit Test.
